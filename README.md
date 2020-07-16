@@ -2,7 +2,7 @@
 
 ## Overview
 
-Here we will keep track of all terraform modules used in Non Ivy infrastructure
+Here we will keep track of all terraform modules used to fill the gaps in Ivy infrastructure
 
 ## Requirements
 
