@@ -1,0 +1,21 @@
+{
+    "Version": "2012-10-17",
+    "Id": "Policy1580848985515",
+    "Statement": [
+        {
+            "Sid": "DenyEverythingExceptOrg",
+            "Effect": "Deny",
+            "Principal": "*",
+            "Action": "s3:*",
+            "Resource": [
+                "arn:${aws_identity_partition}:s3:::${bucket_name}",
+                "arn:${aws_identity_partition}:s3:::${bucket_name}/*"
+            ],
+            "Condition": {
+                "StringNotEquals": {
+                    "aws:PrincipalOrgID": "${principal_org_id}"
+                }
+            }
+        }
+    ]
+}
