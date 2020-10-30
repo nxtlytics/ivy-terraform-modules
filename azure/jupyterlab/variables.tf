@@ -38,6 +38,11 @@ variable "vpn_supernet" {
   description = "CIDR all client_subnets are a part of"
 }
 
+variable "subscription_id" {
+  type        = string
+  description = "Subscription to place this jupyterlab under"
+}
+
 variable "vm_size" {
   type        = string
   description = "The SKU which should be used for this Virtual Machine, such as `Standard_F2`"

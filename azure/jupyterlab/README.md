@@ -49,6 +49,7 @@ WantedBy=multi-user.target
 | prompt\_color | Color to use for the shell prompt | `string` | n/a | yes |
 | resource\_group\_name | Resource Group to use for these resources. [What is a Resource Group?](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-setup-guide/organize-resources?tabs=AzureManagmentGroupsAndHierarchy) | `string` | n/a | yes |
 | subnet\_name | Azure subnet where the VM will be located at | `string` | n/a | yes |
+| subscription\_id | Subscription to place this jupyterlab under | `string` | n/a | yes |
 | sysenv | See [System Environments (SysEnvs)](https://github.com/nxtlytics/ivy-documentation/blob/master/howto/Architecture/Specifications_and_Definitions/System_Environments_SysEnvs.md) | `string` | n/a | yes |
 | tags | A mapping of tags to assign to the resources in this module. | `map` | `{}` | no |
 | team\_email | E-Mail for the team managing these resources | `string` | n/a | yes |

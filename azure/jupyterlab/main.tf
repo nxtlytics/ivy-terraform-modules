@@ -14,7 +14,7 @@ module "labels" {
 }
 
 data "azurerm_subscription" "this" {
-  subscription_id = "***REMOVED***"
+  subscription_id = var.subscription_id
 }
 
 data "azurerm_resource_group" "this" {
